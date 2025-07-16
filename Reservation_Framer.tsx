@@ -330,9 +330,9 @@ export default function BooklaCalendarFramerComplete(props) {
         // API Configuration
         apiConfig = {
             organizationId: "OrganizationID",
-            apiKey: "API_Key",
+            apiKey: "APIKey",
             baseUrl: "https://us.bookla.com",
-            resourceId: "Ressource_Id",
+            resourceId: "RessourceID",
         },
 
         // Language Configuration
@@ -384,8 +384,8 @@ export default function BooklaCalendarFramerComplete(props) {
         servicesCount = 3,
         service1 = {
             enabled: true,
-            id: "ServiceID 1",
-            name: "Nom du service",
+            id: "Service 1",
+            name: "Service Journée",
             description: "Une journée complète de navigation",
             basePrice: 300,
             apaPrice: 100,
@@ -393,8 +393,8 @@ export default function BooklaCalendarFramerComplete(props) {
         },
         service2 = {
             enabled: true,
-            id: "ServiceID 2",
-            name: "Nom du service",
+            id: "Service 2",
+            name: "Service Sunset",
             description: "Navigation au coucher du soleil",
             basePrice: 200,
             apaPrice: 50,
@@ -402,8 +402,8 @@ export default function BooklaCalendarFramerComplete(props) {
         },
         service3 = {
             enabled: true,
-            id: "Service ID 3",
-            name: "Nom de service",
+            id: "Service 3",
+            name: "Service Mix",
             description: "Formule personnalisée",
             basePrice: 350,
             apaPrice: 120,
@@ -2718,13 +2718,13 @@ addPropertyControls(BooklaCalendarFramerComplete, {
             organizationId: {
                 type: ControlType.String,
                 title: "Organization ID",
-                defaultValue: "18566a74-b1ab-4345-948a-517f2ca10f09",
+                defaultValue: "OrganizationID",
                 description: "Your Bookla organization/company ID",
             },
             apiKey: {
                 type: ControlType.String,
                 title: "API Key",
-                defaultValue: "teVkXn9d17cKZknCZopXDsEPz8SHs2Mf3E7r",
+                defaultValue: "APIKey",
                 description: "Your Bookla API key for authentication",
             },
             baseUrl: {
@@ -2737,7 +2737,7 @@ addPropertyControls(BooklaCalendarFramerComplete, {
             resourceId: {
                 type: ControlType.String,
                 title: "Resource ID",
-                defaultValue: "8f653843-ae64-4d1a-9701-3a1ab12d133c",
+                defaultValue: "RessourceID",
                 description: "Default resource ID for bookings",
             },
         },
@@ -2987,7 +2987,7 @@ addPropertyControls(BooklaCalendarFramerComplete, {
             id: {
                 type: ControlType.String,
                 title: "Service ID",
-                defaultValue: "e7c09d8e-e012-4b82-8b31-d584fa4be8ae",
+                defaultValue: "Service 1",
             },
             name: {
                 type: ControlType.String,
@@ -3034,7 +3034,7 @@ addPropertyControls(BooklaCalendarFramerComplete, {
             id: {
                 type: ControlType.String,
                 title: "Service ID",
-                defaultValue: "1b994905-1980-4c7d-813a-66fcb8d88f92",
+                defaultValue: "Service 2",
             },
             name: {
                 type: ControlType.String,
@@ -3081,7 +3081,7 @@ addPropertyControls(BooklaCalendarFramerComplete, {
             id: {
                 type: ControlType.String,
                 title: "Service ID",
-                defaultValue: "7c3ca43d-37b4-483e-b3f6-39e8aed4afe9",
+                defaultValue: "Service 3",
             },
             name: {
                 type: ControlType.String,
